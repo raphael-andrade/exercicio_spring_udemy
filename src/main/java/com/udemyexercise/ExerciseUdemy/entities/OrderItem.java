@@ -29,15 +29,20 @@ public class OrderItem implements Serializable {
     }
     @JsonIgnore
     public Order getOrder(){
+
         return id.getOrder();
     }
     public void setOrder(Order order) {
+
         id.setOrder(order);
     }
+
     public Product getProduct(){
+
         return id.getProduct();
     }
-    public void setProduct(Product product){
+    public void setProduct(Product product)
+    {
         id.setProduct(product);
     }
 
